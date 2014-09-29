@@ -87,11 +87,19 @@ define (require) ->
     setMap: ->
     getMap: ->
 
+
   class google.maps.MarkerImage extends GoogleMapsMock
 
 
   class google.maps.Map extends GoogleMapsMock
     setCenter: ->
+
+
+  class google.maps.MapTypeId
+    ROADMAP: "roadmap"
+    SATELLITE: "satellite"
+    HYBRID: "hybrid"
+    TERRAIN: "terrain"
 
 
   class google.maps.Point extends GoogleMapsMock
